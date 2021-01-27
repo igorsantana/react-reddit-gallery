@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+html,
+body,
+div#root {
+  height: 100%;
+  width: 100%;
+  font-family: "Ubuntu", sans-serif;
+  background-color: #eaeaea;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div.root {
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section.header {
+  width: 100%;
+  position: fixed;
+  min-height: 90px;
+  background-color: #c0d6df;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1.subreddit-name {
+  margin: 0;
+  top: 50%;
+  color: #4f6d7a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section.mainContent {
+  overflow: auto;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 1%;
+}
+
+iframe {
+  position: unset !important;
 }
